@@ -1,0 +1,185 @@
+world: 'eventik'
+location:
+  x: -36
+  y: 127
+  z: -34
+settings:
+  rewards:
+    - p give {win1} 900
+    - p give {win2} 600
+    - p give {win3} 350
+  max_players: 20
+  wait_time: 60 #секунд
+messages:
+  pairs_win: '&6&LТУРНИР: &6{win2} &fпобедил игрока &e{win1}'
+  register_already: '&cРегистрация турнира уже начата!'
+  register_start: '&6Вы открыли регистрацию на турнир'
+  tournament_not_started: '&6Турнир ещё не начат!'
+  clear_inventory: '&cДля начала очистите инвентарь!'
+  success_register: '&6Вы успешно зарегистрировались на турнир.'
+  fall_register: '&6Вы уже зарегистрированы на турнир.'
+  pvp: '&6&lТУРНИР: &6{player} &fпротив игрока &e{enemy}'
+  help:
+    - ''
+    - ''
+    - '&6Использование: &f&l/flexevent start'
+    - '&6Использование: &f&l/flexevent join'
+    - '&6Использование: &f&l/flexevent create arena '
+    - '&6Использование: &f&l/flexevent pos1'
+    - '&6Использование: &f&l/flexevent pos2'
+    - '&6Использование: &f&l/flexevent setinv'
+    - ''
+  wait:
+    - ''
+    - ''
+    - '&a<--- &6Турнир &fначался &a--->'
+    - ''
+    - '&fВ течении &6одномй минуты,'
+    - '&fНе набралось нужное кол-во игроков'
+    - '&cТурнир начался, с оставшимися игроками&r'
+    - ''
+  start_event:
+    - ''
+    - ''
+    - '&a<--- &6Турнир &fначался &a--->'
+    - ''
+    - '&fДля того чтобы &6зарегистрироваться,'
+    - '&fПропишите &6&n/flexevent join'
+    - '&cНапоминаем, что турниры &nавтоматические&r'
+    - ''
+  joined:
+    - '&6&LТУРНИР: &fИгрок &6{name} &fприсоединился к турниру &6{joined} &8/ &c20 &8(/flexevent
+    join)'
+  winners:
+    - ''
+    - ''
+    - '&6Победители турнира &a--->'
+    - '&cПервое место: &e&l{win1} &7| &e&l900 ФЛЕКСОВ'
+    - '&cВторое место: &a&l{win2} &7| &e&l600 ФЛЕКСОВ'
+    - '&cТретье место: &b&l{win3} &7| &e&l350 ФЛЕКСОВ'
+    - ''
+    - ''
+inventory:
+  - ==: org.bukkit.inventory.ItemStack
+    type: GOLDEN_APPLE
+    amount: 3
+  - ==: org.bukkit.inventory.ItemStack
+    type: COOKED_BEEF
+    amount: 16
+  - ==: org.bukkit.inventory.ItemStack
+    type: ENDER_PEARL
+    amount: 2
+  - ==: org.bukkit.inventory.ItemStack
+    type: TOTEM
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_SWORD
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Набор §b§lPvP
+      enchants:
+        DAMAGE_ALL: 5
+        FIRE_ASPECT: 2
+        LOOT_BONUS_MOBS: 3
+        SWEEPING_EDGE: 3
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_BOOTS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Набор §b§lPvP
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        PROTECTION_FALL: 4
+        DEPTH_STRIDER: 3
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_LEGGINGS
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Набор §b§lPvP
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_CHESTPLATE
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Набор §b§lPvP
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1
+  - ==: org.bukkit.inventory.ItemStack
+    type: DIAMOND_HELMET
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: §7Набор §b§lPvP
+      enchants:
+        PROTECTION_ENVIRONMENTAL: 4
+        OXYGEN: 3
+        WATER_WORKER: 1
+        DURABILITY: 3
+        MENDING: 1
+      repair-cost: 1
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - null
+  - ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    amount: 2
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:long_fire_resistance
+  - ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:strong_swiftness
+  - ==: org.bukkit.inventory.ItemStack
+    type: SPLASH_POTION
+    amount: 3
+    meta:
+      ==: ItemMeta
+      meta-type: POTION
+      potion-type: minecraft:strong_strength
+  - null
+  - null
+  - null
+  - null
+  - null

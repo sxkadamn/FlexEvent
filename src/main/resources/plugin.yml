@@ -1,0 +1,7 @@
+name: FlexEvent
+version: '${project.version}'
+main: net.flexevent.FlexEvent
+commands:
+  flexevent:
+    aliases:
+      - fevent
